@@ -1,21 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './Pages/LandingPage/landingPage';
+import SignupPage from './Pages/SignUpPage/SignUpPage';
 import './App.css';
 
 
 function App() {
-  return (
-    <Router>
-      <div>
-      <Routes>
-        <Route path='/' element={<LandingPage />}></Route>
-        </Routes>
-      </div>
-    </Router>
-  );
-}
-
+    return (
+      <Router>
+        <div>
+          <Routes>
+           <Route path ='/' element = {<SignupPage />}></Route>
+          </Routes>
+        </div>
+      </Router>   
+    );
+} 
+  
 export default App;
 
 
