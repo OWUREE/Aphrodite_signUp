@@ -10,6 +10,7 @@ html{
     color: white;
 }
 body{
+    font-family: 'Poppins';
     color: white;
     background-color: gainsboro;
     width: 100%;
@@ -20,6 +21,7 @@ body{
 /*LHS element styles starts */
 
 .Couple_image{
+    border-bottom-right-radius: 50px;
     width: auto;
     height: 100vh;
     background: url(../../Assets/Group\ 190-min.png) no-repeat center/cover;
@@ -34,41 +36,59 @@ body{
 .Couple_content{
     font-size: 1.5rem;
 }
-.Couple_content h2{
-    font-size: 2rem;
-    text-align: center;
+.Couple_content .h1{
+    color: white;
+    line-height: 1.3;
     letter-spacing: 0.2rem;
     line-height: 1.3;
-    margin-top: 52%;
+    margin-top: 45%;
+    margin-left: 10%;
 }
-.Couple_content p{
+.Couple_content h2{
+   
+    margin-top: 1.5rem;
+    color: white;
     font-size: 2rem;
-    margin-top: 11%;
-    margin-right: 30%;
+    margin-left: 10%;
+    letter-spacing: 0.2rem;
+    line-height: 1.5;
+    
+   
+}
+.Couple_content .p{
+    color: white;
+    font-size: 2rem;
+    margin-left: 10%;
+    margin-top: 8%;
+    margin-right: 35%;
     font-weight: lighter;
-    text-align: center;
     line-height: 1.2;
 }
 /* RHS element styles starts here */
 .signupForm{
+    width: 89%;
+    max-height: 94%;
+    margin: 3%;
+    margin-left: 4rem;
+    border-radius:1.5rem;
     color: black;
     font-size: 1.2rem;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
-.flex-items{
+.flex_items{
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.create-account{
+.create_account{
     padding: 0;
     font-size: 2.3rem;
     font-weight: bold;
     margin-left: 6.5rem;
     font-weight: bold;
 }
-.sign-in{
+.sign_in{
     font-size: 2.3rem;
     font-weight: bold;
     text-decoration: none;
@@ -78,7 +98,7 @@ body{
 /* form input syles start here */
 .forms{
     margin-left: 10%;
-    margin-top: 4%;
+    margin-top: 3%;
 }
 .label{
     font-size: 1.8rem;
@@ -93,28 +113,29 @@ body{
     background-color: #EDEDED;
     width: 85%;
     padding: 1.0rem;
-    margin: 0 0 1.2rem 0;
-    margin-top: 0.5rem;
+    margin: 0 0 1.5rem 0;
     border: none;
     border-radius: 0.2rem;
     font-size: 2.2rem;
 }
 .submit{
-    font-size: 2rem;
+    font-size: 2.2rem;
     border-radius: 0.2rem;
     color: black;
     background-color: #ff0000ec;
     width: 85%;
-    margin-top:1.6rem;
+    padding: 1.0rem;
+    margin: 0 0 2rem 0;
+    margin-top: 0.5rem;
+    border: none;
+    
 }
-.p{
-   font-size: 1.5rem;
-   font-weight: bold;
-   color:#665b5b;
-   text-align: center; 
-   margin-right: 2rem;
-   margin-top: 0.3rem; 
-  
+.par{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color:#665b5b;
+    text-align: center;
+
 }
 .span{
     color: red;

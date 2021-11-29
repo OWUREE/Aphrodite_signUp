@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import {FaRegEyeSlash} from 'react-icons/fa';
-import './SignUp.css';
+import styles from './signUp.module.css';
 
 
 
@@ -44,19 +44,19 @@ const SignupForm = () => {
     },
   });
   return (
-      <div className = "signupForm">
-          <div className = "flex-items">
-           <h3 className = "create-account">
+      <div className = {styles.signupForm}>
+          <div className = {styles.flex_items}>
+           <h3 className = {styles.create_account}>
         Create account
            </h3>
-           <h4 className = "sign-in">
+           <h4 className = {styles.sign_in}>
         Sign in
            </h4>
       </div>
-      <form className = "forms" onSubmit={formik.handleSubmit}>
-      <label className = "label" htmlFor="fullName">Full Name</label> <br />
+      <form className = {styles.forms} onSubmit={formik.handleSubmit}>
+      <label className = {styles.label} htmlFor="fullName">Full Name</label> <br />
       <input
-        className = "input"
+        className = {styles.input}
         id="fullName"
         name="fullName"
         type="text"
@@ -67,9 +67,9 @@ const SignupForm = () => {
          <div>{formik.errors.fullName}</div>
        ) : null}
 
-      <label className = "label" htmlFor="email">Email Address</label> <br />
+      <label className = {styles.label} htmlFor="email">Email Address</label> <br />
       <input
-        className = "input"
+        className ={styles.input}
         id="email"
         name="email"
         type="email"
@@ -80,11 +80,11 @@ const SignupForm = () => {
          <div>{formik.errors.email}</div>
        ) : null}
        
-      <label className = "label" htmlFor="password">Password <span className = "char">(Enter atleast 8 characters)</span>
+      <label className = {styles.label} htmlFor="password">Password <span className = "char">(Enter atleast 8 characters)</span>
       </label> <br />
 
        <input
-        className = "input"
+        className = {styles.input}
         id="password"
         minLength = "8"
         name="password"
@@ -98,9 +98,9 @@ const SignupForm = () => {
          <div>{formik.errors.password}</div>
        ) : null}
 
-      <label className = "label" htmlFor="confirmPassword">Confirm Password</label>
+      <label className = {styles.label} htmlFor="confirmPassword">Confirm Password</label>
       <input
-        className = "input"
+        className = {styles.input}
         id="confirmPassword"
         name="confirmPassword"
         type={passwordShown ? "text" : "password"}
@@ -113,11 +113,11 @@ const SignupForm = () => {
        ) : null}
 
       <button type="submit"
-      className = "input submit">Create new account</button>
+      className ={styles.submit}>Create new account</button>
       </form>
-      <p className = "p">
+      <p className ={styles.par}>
       By signing up, I agree to the QNET 
-      <span className = "span"> Terms of use</span> and <span className = "span">Privacy Policy</span>
+      <span className = {styles.span}> Terms of use</span> and <span className = {styles.span}>Privacy Policy</span>
        </p>
       </div>
     

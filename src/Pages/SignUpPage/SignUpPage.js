@@ -1,11 +1,11 @@
 import React from 'react';
-import SignupLeft from '../../Component/SignUp/SignUpLeft';
-import SignupRight from '../../Component/SignUp/SignUpRight';
-import './SignUpPage.css';
+import SignupLeft from '../../Component/SignUp/signUpLeft';
+import SignupRight from '../../Component/SignUp/signUpRight';
+import styles from './SignUpPage.module.css';
 
 function SignupPage() {
     return (
-        <div className = "grid-items"> 
+        <div className = {styles.grid_items}> 
             <SignupLeft />
             <SignupRight />
         </div>
